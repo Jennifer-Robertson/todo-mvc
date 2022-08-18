@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test your knowledge!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,200;12..72,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/mvc/model">Model</a>
+        <a href="/mvc/view">View</a>
+        <a href="/mvc/controller">Controller</a>
+        <a href="/quiz">Quiz!</a>
+    </nav>
+    <h1>Let's test your knowledge!</h1>
+
+    <section class="container">
+        <% questions.forEach( q => { %>
+            <div class="question"><%=q.question%></div>
+            <ul class="answers">
+                <li class="<%=q.guess1[1]%>"><%=q.guess1[0]%></li>
+                <li class="<%=q.guess2[1]%>"><%=q.guess2[0]%></li>
+                <li class="<%=q.guess3[1]%>"><%=q.guess3[0]%></li>
+            </ul>
+        <% }) %>    
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+

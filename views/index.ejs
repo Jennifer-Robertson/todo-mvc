@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>What is MVC?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,200;12..72,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
-    <h1>Create A Todo List By Clicking The Button Below</h1>
-    <a href="/todos"> New Todo List</a>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/mvc/model">Model</a>
+        <a href="/mvc/view">View</a>
+        <a href="/mvc/controller">Controller</a>
+        <a href="/quiz">Quiz!</a>
+    </nav>
+    <section class="container">
+        <h1>What is Model View Controller?</h1>
+        <p>It us a software design pattern that can be used across 
+            several frameworks with many programming languages.
+        </p>
+        <p>
+            It separates concerns into 3 categories: 
+            <ul>
+                <li>Model</li>
+                <li>View</li>
+                <li>Controller</li>
+            </ul>
+        </p>
+    
+        <h2>Benefits of MVC</h2>
+        <ul>
+            <li>Separation of concerns</li>
+            <li>Helpful to use as a design pattern when planning development</li>
+            <li>It makes components reuseable without much modification</li>
+            <li>Easier to maintain and modify</li>
+            <li>Supports multiple views</li>
+            <li>Each part can be tested independently</li>
+        </ul>
+        <img src="https://www.freecodecamp.org/news/content/images/2021/04/MVC3.png" alt="mvc architecture pattern">
+    
+        <h2>MVC Overview</h2>
+        <p>The browser request gets passed from the server to the ROUTER. The ROUTER sends the request to the correct CONTROLLER. The CONTROLLER then sends the request to the MODEL. The MODEL then communicates with the DATABASE.
+        </p>
+        <p>The DATABASE sends back the data to the MODEL, which then sends the data back to the CONTROLLER. The CONTROLLER will send the data to the VIEW, which then gets passed into the HTML templating engine. </p>
+        <p>The VIEW then sends the HTML code back to the CONTROLLER which is then sent back and rendered for the user.</p>
+    </section>
+    
 </body>
 </html>

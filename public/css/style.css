@@ -1,5 +1,23 @@
-h1{
-    color: red;
+body {
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Truculenta', sans-serif;
+}
+
+h1, h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+ .question{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+ }
+p, li {
+    font-size: 1.6rem;
 }
 .completed{
     text-decoration: line-through;
@@ -7,4 +25,54 @@ h1{
 }
 .not{
     text-decoration: underline;
+}
+
+.correct {
+    background: green;
+}
+
+.incorrect{
+    background: red;
+}
+
+img {
+    width: 600px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 2rem;
+    padding: 20px;
+    width: 100%;
+    background: #2e7d32;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+a:hover{
+    color: white;
+}
+
+ul {
+    list-style: none
+}
+
+li {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
 }
